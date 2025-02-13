@@ -1,6 +1,6 @@
 {
   "name": "validador-doc",
-  "version": "1.0.2",
+  "version": "1.0.1",
   "keywords": [
     "validador",
     "documentos",
@@ -15,9 +15,9 @@
   "jsdelivr": "dist/index.umd.js",
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs,iife --dts",
-    "prepare": "npm run build",
-    "prepublishOnly": "copy ../README.md .",
-    "publish": "npm publish"
+    "publish-major": "npm version major && npm run build && npm publish",
+    "publish-minor": "npm version minor && npm run build && npm publish",
+    "publish-patch": "npm version patch && npm run build && npm publish"
   },
   "devDependencies": {
     "tsup": "8.3.6",
