@@ -1,6 +1,6 @@
 {
   "name": "validador-doc",
-  "version": "1.0.2",
+  "version": "1.0.1",
   "keywords": [
     "validador",
     "documentos",
@@ -14,8 +14,7 @@
   "unpkg": "dist/index.umd.js",
   "jsdelivr": "dist/index.umd.js",
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs,iife --dts",
-    "prepare": "npm run build"
+    "build": "tsup src/index.ts --format esm,cjs,iife --dts"
   },
   "devDependencies": {
     "tsup": "8.3.6",
