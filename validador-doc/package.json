@@ -1,0 +1,24 @@
+{
+  "name": "validador-doc",
+  "version": "1.0.1",
+  "keywords": [
+    "validador",
+    "documentos",
+    "cnpj"
+  ],
+  "description": "Validador de números de documentos.",
+  "license": "MIT",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "unpkg": "dist/index.umd.js",
+  "jsdelivr": "dist/index.umd.js",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs,iife --dts",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "tsup": "8.3.6",
+    "typescript": "5.7.3"
+  }
+}

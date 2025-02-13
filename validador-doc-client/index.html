@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Validador de Documentos</title>
+    <script>
+      window.VALIDADOR_DOC_CUSTOM_NAMESPACE = "_ValidadorDoc";
+      window.ValidadorDoc = true;
+    </script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/validador-doc@0.0.1/dist/index.global.js"></script> -->
+    <script src="../validador-doc/dist/index.global.js"></script>
+    <script src="js.js"></script>
+  </head>
+  <body>
+    <input type="text" id="cnpj" />
+    <button onclick="ValidarCnpj()">validar</button>
+  </body>
+</html>
